@@ -131,6 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 122754888}
+  - component: {fileID: 122754889}
   m_Layer: 0
   m_Name: controller
   m_TagString: Untagged
@@ -158,6 +159,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &122754889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122754887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab95ceb77765a3040bcc8dedefbe2ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereLivingRoom: {fileID: 1771795779}
+  sphereCantina: {fileID: 1166958407}
+  sphereCube: {fileID: 1202029740}
+  sphereMezzanine: {fileID: 1257194224}
+  cameraVr: {fileID: 1571441083}
 --- !u!1 &161712404
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +258,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 161712407}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704312997}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnLivingRoomClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &161712407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +458,7 @@ GameObject:
   - component: {fileID: 424818268}
   - component: {fileID: 424818267}
   m_Layer: 0
-  m_Name: CubeHotspot (1)
+  m_Name: CubeHotspot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -497,7 +527,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 424818268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807021821}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnCubeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &424818268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +660,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 438832267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657939211}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnCubeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &438832267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,6 +976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657939210}
+  - component: {fileID: 657939211}
   m_Layer: 0
   m_Name: controller
   m_TagString: Untagged
@@ -950,6 +1005,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &657939211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657939209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab95ceb77765a3040bcc8dedefbe2ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereLivingRoom: {fileID: 1771795779}
+  sphereCantina: {fileID: 1166958407}
+  sphereCube: {fileID: 1202029740}
+  sphereMezzanine: {fileID: 1257194224}
+  cameraVr: {fileID: 1571441083}
 --- !u!1 &704312995
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +1031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704312996}
+  - component: {fileID: 704312997}
   m_Layer: 0
   m_Name: controller
   m_TagString: Untagged
@@ -988,6 +1061,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &704312997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704312995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab95ceb77765a3040bcc8dedefbe2ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereLivingRoom: {fileID: 1771795779}
+  sphereCantina: {fileID: 1166958407}
+  sphereCube: {fileID: 1202029740}
+  sphereMezzanine: {fileID: 1257194224}
+  cameraVr: {fileID: 1571441083}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +1973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807021820}
+  - component: {fileID: 807021821}
   m_Layer: 0
   m_Name: controller
   m_TagString: Untagged
@@ -1911,6 +2002,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &807021821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807021819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab95ceb77765a3040bcc8dedefbe2ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereLivingRoom: {fileID: 1771795779}
+  sphereCantina: {fileID: 1166958407}
+  sphereCube: {fileID: 1202029740}
+  sphereMezzanine: {fileID: 1257194224}
+  cameraVr: {fileID: 1571441083}
 --- !u!1 &856559076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,7 +2101,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 856559079}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657939211}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnLivingRoomClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &856559079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2250,7 +2370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104463692}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704312997}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnCantinaClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1104463692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,7 +2503,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1165373686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 807021821}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnCantinaClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1165373686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3499,7 +3643,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605380060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704312997}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnMezannineClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1605380060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3564,12 +3720,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624271798}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1771795784}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1624271800
 MonoBehaviour:
@@ -3888,7 +4044,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1400142998}
-  - {fileID: 1624271799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829359849
@@ -4981,7 +5136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2056781871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 122754889}
+        m_TargetAssemblyTypeName: LocationController, Assembly-CSharp
+        m_MethodName: OnCubeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2056781871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5233,3 +5400,4 @@ SceneRoots:
   - {fileID: 1257194229}
   - {fileID: 1202029745}
   - {fileID: 1166958412}
+  - {fileID: 1624271799}
