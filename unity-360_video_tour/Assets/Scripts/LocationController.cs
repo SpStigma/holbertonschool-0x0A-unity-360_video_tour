@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class LocationController : MonoBehaviour
 {
@@ -7,6 +8,17 @@ public class LocationController : MonoBehaviour
     public GameObject sphereCube;
     public GameObject sphereMezzanine;
     public GameObject cameraVr;
+    public TextMeshProUGUI info;
+
+    private Vector3 originalScale;
+
+    private void Start()
+    {
+        if (info != null && info.transform.parent != null)
+        {
+            originalScale = info.transform.parent.localScale;
+        }
+    }
 
     private void DesactiveSphere()
     {
@@ -39,5 +51,19 @@ public class LocationController : MonoBehaviour
         DesactiveSphere();
         sphereMezzanine.SetActive(true);
         cameraVr.transform.position = new Vector3(0, 10, 0);
+    }
+
+    public void DisplayInfo()
+    {
+        info.gameObject.SetActive(!info.gameObject.activeSelf);
+
+        if (info.gameObject.activeSelf)
+        {
+            info.transform.parent.localScale = originalScale * 2;
+        }
+        else
+        {
+            info.transform.parent.localScale = originalScale;
+        }
     }
 }
