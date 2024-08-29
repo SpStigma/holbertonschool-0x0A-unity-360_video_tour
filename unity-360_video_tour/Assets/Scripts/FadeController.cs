@@ -4,6 +4,7 @@ using System.Collections;
 
 public class FadeInOutController : MonoBehaviour
 {
+    public GameObject imagesContainer;
     public Image[] images;
 
     public void StartFadeInOut()
@@ -13,11 +14,13 @@ public class FadeInOutController : MonoBehaviour
 
     IEnumerator FadeInAndOut(float fadeInDuration, float fadeOutDuration)
     {
-        // Fade In
+        imagesContainer.SetActive(true);
         yield return StartCoroutine(FadeIn(fadeInDuration));
         yield return new WaitForSeconds(1f);
         // Fade Out
         yield return StartCoroutine(FadeOut(fadeOutDuration));
+        yield return new WaitForSeconds(2f);
+        imagesContainer.SetActive(false);
     }
 
     IEnumerator FadeIn(float duration)
