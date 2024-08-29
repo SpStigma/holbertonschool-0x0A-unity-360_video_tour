@@ -28,7 +28,7 @@ public class FadeInOutController : MonoBehaviour
         float elapsedTime = 0f;
 
         Color[] startColors = new Color[images.Length];
-        Color endColor = new Color(1f, 1f, 1f, 1f);
+        Color endColor = new Color(0f, 0f, 0f, 1f);
 
         for (int i = 0; i < images.Length; i++)
         {
@@ -59,7 +59,7 @@ public class FadeInOutController : MonoBehaviour
         float elapsedTime = 0f;
 
         Color[] startColors = new Color[images.Length];
-        Color endColor = new Color(1f, 1f, 1f, 0f);
+        Color endColor = new Color(0f, 0f, 0f, 0f);
 
         for (int i = 0; i < images.Length; i++)
         {
